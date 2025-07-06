@@ -1,1 +1,2 @@
-echo $((POWER ** BREATH))
+#!/bin/bash
+echo $((BREATH ** LOVE))
