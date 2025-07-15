@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 # This script lists files in the current directory, showing only the part after the first dash
 
 for file in *-*
