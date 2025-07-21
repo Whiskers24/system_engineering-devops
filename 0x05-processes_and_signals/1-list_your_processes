@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that displays all running processes in a tree format, including those without a TTY
+# A Bash script that lists all processes in tree format with columns USER, STARTED, and CMD
 
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest
+ps -eo user,lstart,cmd --forest | awk 'NR==1{$2="STARTED"; $3=$4=$5=""; $6=""; $7=""; $8="CMD"}1'
