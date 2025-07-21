@@ -1,4 +1,4 @@
-!/bin/bash
+#!/bin/bash
 # This script checks the status of a file named "school"
 
 if [ -e school ]; then
