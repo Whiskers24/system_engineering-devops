@@ -1,9 +1,8 @@
-#!/bin/bash
-# This script prints numbers from 1 to 20 with superstitious messages using case statements
+#!/usr/bin/env bash
+# This script prints numbers from 1 to 20 with superstitious messages at 4, 9, and 17
 
 i=1
-while [ $i -le 20 ]
-do
+while [ $i -le 20 ]; do
   echo "$i"
   case $i in
     4)
