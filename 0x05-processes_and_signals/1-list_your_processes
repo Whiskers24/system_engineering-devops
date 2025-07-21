@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that lists all running processes in a minimal format (USER and COMMAND)
+# A Bash script that lists only the users running processes
 
-ps -eo user,cmd
+ps -eo user --no-headers | sort | uniq
