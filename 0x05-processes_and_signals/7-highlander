@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# A Bash script that resists SIGTERM and keeps running indefinitely
+
+# Trap SIGTERM signal and respond with a custom message instead of terminating
+trap 'echo "I am invincible!!!"' SIGTERM
+
+# Infinite loop with sleep
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
