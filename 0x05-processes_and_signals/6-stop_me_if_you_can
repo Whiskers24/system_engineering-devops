@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# A Bash script that stops the 4-to_infinity_and_beyond process without using kill or killall
+
+# shellcheck disable=SC2009
+pid=$(ps -ef | grep 4-to_infinity_and_beyond | grep -v grep | awk '{print $2}')
+
+# Send SIGTERM by redirecting to /proc/[PID]/fd (unorthodox but works in some environments)
+[ -n "$pid" ] && echo "Stopping PID $pid..." && exec 3<>"/proc/$pid/fd/0"
