@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# A Bash script that lists all running processes in a user-oriented tree format
+# A Bash script that lists all running processes in a minimal format (USER and COMMAND)
 
-ps -eo user,lstart,cmd --forest
+ps -eo user,cmd
