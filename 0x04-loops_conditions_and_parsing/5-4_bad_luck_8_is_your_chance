@@ -1,9 +1,8 @@
-#!/bin/bash
-# This script loops from 1 to 10 and prints different messages based on the iteration
+#!/usr/bin/env bash
+# This script loops from 1 to 10 and prints messages based on specific iterations
 
 i=1
-while [ $i -le 10 ]
-do
+while [ $i -le 10 ]; do
   if [ $i -eq 4 ]; then
     echo "bad luck"
   elif [ $i -eq 8 ]; then
