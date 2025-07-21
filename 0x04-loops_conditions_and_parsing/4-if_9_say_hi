@@ -1,9 +1,8 @@
-#!/bin/bash
-# This script displays "Best School" 10 times and adds "Hi" after the 9th iteration
+#!/usr/bin/env bash
+# This script displays "Best School" 10 times, and "Hi" after the 9th iteration
 
 i=1
-while [ $i -le 10 ]
-do
+while [ $i -le 10 ]; do
   echo "Best School"
   if [ $i -eq 9 ]; then
     echo "Hi"
